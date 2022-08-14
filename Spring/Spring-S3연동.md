@@ -56,7 +56,7 @@ S3에 접근하는 사용자에 대한 접근 권한을 위해 IAM을 사용.
 ![버킷.png](imgs/Spring-S3연동/버킷.png)
 - 권한 탭을 선택하고, 버킷 정책 편집 버튼을 클릭한다.
 
-![버킷 정책3.png](imgs/Spring-S3연동/버킷 정책3.png)
+![버킷 정책3.png](imgs/Spring-S3연동/버킷정책3.png)
 
 - 어떠한 서비스에 대한 정책인지 선택한다.
     - 우리는 S3 Bucket으로 선택
@@ -69,11 +69,11 @@ S3에 접근하는 사용자에 대한 접근 권한을 위해 IAM을 사용.
     - 어떤 리소스에 대한 설정인지 입력한다.
         - 우리가 생성한 버킷의 리소스 이름을 작성한다.
 - `Add Statement` 버튼을 클릭하여 정책을 추가한다.
-![버킷 정책2.png](imgs/Spring-S3연동/버킷 정책2.png)
+![버킷 정책2.png](imgs/Spring-S3연동/버킷정책2.png)
 
 - 추가된 정책을 확인하고 `Generate Policy` 버튼을 클릭하여 Key-Value 형태로 주어지는 정책을 복사한다.
 
-![버킷 정책3.png](imgs/Spring-S3연동/버킷 정책3.png)
+![버킷 정책3.png](imgs/Spring-S3연동/버킷정책3.png)
 - 버킷의 권한 탭으로 돌아가 복사한 내용을 위 사진과 같이 붙여넣는다.
 - 주의 !!!! GetObject, PutObject, DeleteObject 액션에 대한 정책이 추가되었을 경우 리소스에 `/*` 를 추가해주어야 한다.
     
